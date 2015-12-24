@@ -2,6 +2,8 @@
 
 An even more light-weight (1.5kb) tooltip in pure css
 
+![preview](http://ooo.0o0.ooo/2015/12/24/567c13f3a6228.png)
+
 ## Install
 
 CDN: https://npmcdn.com/clew@latest
