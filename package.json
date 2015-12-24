@@ -1,0 +1,26 @@
+{
+  "name": "clew",
+  "version": "0.0.1",
+  "description": "An even more light-weight tooltip in pure css",
+  "main": "dist/clew.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "release": "gulp build && npm publish",
+    "demo": "surge -p ./ -d clew.surge.sh"
+  },
+  "files": [
+    "./dist"
+  ],
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.2.1",
+    "cssnano": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "postcss-mixins": "^3.0.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.2.0"
+  }
+}
