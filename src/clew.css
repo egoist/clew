@@ -25,7 +25,6 @@ $bg-color: #fff;
 	}
   
   &.clew-animation {
-    overflow: hidden;
     &:after {
       display: block;
       opacity: 0;
