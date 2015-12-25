@@ -1,6 +1,6 @@
 # clew
 
-An even more light-weight (1.5kb) tooltip in pure css
+An even more light-weight (1.2kb) tooltip in pure css, with animation.
 
 ![preview](http://ooo.0o0.ooo/2015/12/24/567c13f3a6228.png)
 
@@ -38,6 +38,12 @@ clew-top
 clew-bottom
 clew-left
 clew-right
+```
+
+Enable animation:
+
+```html
+clew-animation
 ```
 
 ## License

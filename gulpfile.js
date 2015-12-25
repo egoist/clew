@@ -2,7 +2,6 @@ var gulp = require('gulp')
 var postcss = require('gulp-postcss')
 
 var defaultPlugins = [
-	require('postcss-mixins'),
 	require('postcss-nested')(),
 	require('postcss-simple-vars')()
 ]

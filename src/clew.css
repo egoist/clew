@@ -1,101 +1,99 @@
-$font-size: 12px;
+$font-size: 13px;
 $danger: #b34e4d;
 $warning: #c09854;
 $info: #3986ac;
 $success: #458746;
+$bg-color: #fff;
 
 [data-clew] {
 	position: relative;
-  &:before, &:after {
+  &:after {
 		position: absolute;
     transform: translateX(-50%);
     display: none;
     font-size: $font-size;
-    line-height: $font-size;
-	}
-    
-  &:before {
-		content: '';
-    border: 6px solid transparent;
-	}
-    
-  &:after {
+    border-radius: 4px;
 		content: attr(data-clew);
-    padding: 7px 10px;
-    background-color: #333;
-    color: white;
-    white-space: nowrap;
+    padding: 10px;
+    background-color: $bg-color;
+    box-shadow: 0 0 14px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    color: #777;
+    width: 200px;
+    line-height: 1.25rem;
+    text-align: left;
 	}
+  
+  &.clew-animation {
+    overflow: hidden;
+    &:after {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s;
+    }
+    &:hover {
+      overflow: visible;
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 	
 	&:hover {
-		&:before, &:after {
-			display: block;
-		}
+    &:after {
+      display: block;
+    }
 	}
 
 	&.clew-top {
-		&:before, &:after {
+		&:after {
 			bottom: 100%;
 			left: 50%;
 			transform: translateX(-50%) translateY(8px);
 		}
 		&:hover {
-			&:before {
-				margin-bottom: -12px;
-				border-top-color: #333;
-			}
-			&:before, &:after {
+			&:after {
 				transform: translateX(-50%) translateY(-8px);
 			}
 		}
 	}
 	
 	&.clew-bottom {
-		&:before, &:after {
+		&:after {
 			top: 100%;
 			left: 50%;
 			transform: translateX(-50%) translateY(-8px);
 		}
 		&:hover {
-			&:before {
-				margin-top: -12px;
-				border-bottom-color: #333;
-			}
-			&:before, &:after {
+			&:after {
 				transform: translateX(-50%) translateY(8px);
 			}
 		}
 	} 
 	
 	&.clew-left {
-		&:before, &:after {
+		&:after {
 			top: 50%;
 			right: 100%;
 			transform: translateX(8px) translateY(-50%);
 		}
 		&:hover {
-			&:before {
-				margin-right: -12px;
-				border-left-color: #333;
-			}
-			&:before, &:after {
+			&:after {
 				transform: translateX(-8px) translateY(-50%);
 			}
 		}
 	} 
 	
 	&.clew-right {
-		&:before, &:after {
+		&:after {
 			top: 50%;
 			left: 100%;
 			transform: translateX(-8px) translateY(-50%);
 		}
 		&:hover {
-			&:before {
-				margin-left: -12px;
-				border-right-color: #333;
-			}
-			&:before, &:after {
+			&:after {
 				transform: translateX(8px) translateY(-50%);
 			}
 		}

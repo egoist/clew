@@ -1,13 +1,13 @@
 {
   "name": "clew",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "An even more light-weight tooltip in pure css",
   "main": "dist/clew.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "gulp build",
     "dev": "gulp",
-    "release": "gulp build && npm publish",
-    "demo": "surge -p ./ -d clew.surge.sh"
+    "release": "npm test && npm publish",
+    "deploy": "surge -p ./ -d clew.surge.sh"
   },
   "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",

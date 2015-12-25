@@ -31,7 +31,18 @@
 		.green-bg {
 			background-color: green;
 			color: #fff;
+      cursor: pointer
 		}
+    
+    button {
+      cursor: pointer
+    }
+    
+    .magenta-bg {
+      color: #fff;
+      background-color: magenta;
+      cursor: pointer
+    }
 
 
 	</style>
@@ -43,11 +54,17 @@
 	<h1>Clew</h1>
 
 	<p>
-		Lorem ipsum dolor sit amet, <span class="green-bg clew-bottom" data-clew="Clew is awesome">consectetur</span> adipisicing elit. Quibusdam, eum vel cum impedit voluptate eius, odio totam voluptas praesentium animi similique unde veniam saepe esse in nam consequatur enim delectus.
+		Lorem ipsum dolor sit amet, <span class="green-bg clew-top" data-clew="Clew is awesome">consectetur</span> adipisicing elit. Quibusdam, eum vel cum impedit voluptate eius, odio totam voluptas praesentium animi similique unde veniam saepe esse in nam consequatur enim delectus.
 
 		<br>
 		<br>
-		<button data-clew="Confirm it!" class="clew-right" onclick="conf()">Cats are cute?</button>
+    
+    Clew is good for <span class="clew-top magenta-bg clew-animation" data-clew="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, eum vel cum impedit voluptate eius, odio totam voluptas praesentium animi similique unde veniam saepe esse in nam consequatur enim delectus. ">large-text</span> tooltip.
+    
+    <br>
+		<br>
+    
+		<button data-clew="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, eum vel cum impedit voluptate eius!" class="clew-right clew-animation" onclick="conf()">Cats are cute?</button>
 
 	</p>
 
