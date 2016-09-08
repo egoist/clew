@@ -6,7 +6,7 @@ An even more light-weight (1.2kb) tooltip in pure css, with animation.
 
 ## Install
 
-CDN: https://npmcdn.com/clew@latest
+CDN: https://unpkg.com/clew@latest
 
 ```bash
 npm install clew
